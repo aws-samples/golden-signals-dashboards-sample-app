@@ -2,7 +2,7 @@
 
 This sample code offers a fully automated AWS CDK Pipeline that you can use to create and manage Amazon CloudWatch Dashboards in your AWS Account. The sample application make use of [cdk-golden-signals-dashboard AWS CDK Construct](https://github.com/cdklabs/cdk-golden-signals-dashboard) & AWS Tags (to find and group AWS Resources) to create service-specific, multi-region Amazon CloudWatch Dashboards. 
 
-[Check out these](https://github.com/caws-samples/golden-signals-dashboards-sample-app/tree/main/dashboard-images) screen captures of CloudWatch dashboards created by this sample application.
+[Check out these](https://github.com/aws-samples/golden-signals-dashboards-sample-app/tree/main/dashboard-images) screen captures of CloudWatch dashboards created by this sample application.
 
 Please let us know if you need more resource support by opening an issue here and we would priortize it.
 
@@ -42,9 +42,7 @@ Please let us know if you need more resource support by opening an issue here an
 
 
 ## Security
-
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
 ## License
-
 This library is licensed under the MIT-0 License. See the LICENSE file.
