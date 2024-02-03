@@ -8,7 +8,7 @@ import { DashboardStack } from '../src/dashboard-stack';
 
 test('Snapshot', () => {
   const app = new App();
-  const stack = new DashboardStack(app, 'test', { dashboardPrefix: 'APP1' });
+  const stack = new DashboardStack(app, 'test', { dashboardPrefix: 'APP1', dashboardTagKey: 'AutoDashboard' });
 
   const template = Template.fromStack(stack);
   expect(template.toJSON()).toMatchSnapshot();
@@ -22,7 +22,7 @@ describe('cdk-nag AwsSolutions Pack', () => {
   beforeAll(() => {
     // GIVEN
     app = new App();
-    stack = new DashboardStack(app, 'test', { dashboardPrefix: 'APP1' });
+    stack = new DashboardStack(app, 'test', { dashboardPrefix: 'APP1', dashboardTagKey: 'AutoDashboard' });
 
     // WHEN
     Aspects.of(stack).add(new AwsSolutionsChecks());

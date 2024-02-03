@@ -55,6 +55,6 @@ coverage
 venv
 node_modules
 .DS_Store
-resources.json
+test/__snapshots__/
 custom_namespaces.json
 !/.projenrc.js

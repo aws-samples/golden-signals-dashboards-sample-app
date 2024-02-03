@@ -63,7 +63,7 @@ export class DashboardPipelineStack extends Stack {
               'autoscaling:DescribeLaunchConfigurations',
               'autoscaling:DescribeLoadBalancers',
               'autoscaling:DescribeLoadBalancerTargetGroups',
-              'autoscaling:DescribeTags'
+              'autoscaling:DescribeTags',
             ],
             resources: ['*'],
           }),
@@ -75,11 +75,11 @@ export class DashboardPipelineStack extends Stack {
       env: { account: this.account, region: this.region },
     }));
 
-    deploymentPipeline.buildPipeline()
+    deploymentPipeline.buildPipeline();
 
-    new CfnOutput(this, "pipelineARN", {
+    new CfnOutput(this, 'pipelineARN', {
       value: deploymentPipeline.pipeline.pipelineArn,
-      exportName: "GoldenSignalsPipelineARN",
+      exportName: 'GoldenSignalsPipelineARN',
     });
   }
 }
